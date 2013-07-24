@@ -1,41 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>To-Do List</title>
-
-	<style>
-		body {
-			font-family: helvetica;
-		}
-		
-		#list .checked {
-		 	color: #999;
-		}
-
-		#list .checked::after {
-		 	content: "";
-		}
-
-		#list .done {
-		 	text-decoration: line-through;
-		}
-	</style>
-</head>
-<body>
-
-<form>
-	<label>Do this: <input type="text" name="item" id="item" required /></label>
-	<input type="submit" valie="add" />
-</form>
-
-<ul id="list">
-
-</ul>
-
-</body>
-
-<script>
-
 (function() {
 	var item = document.querySelector('#item'),
 		form = document.querySelector('form'),
@@ -75,6 +37,3 @@
 	getList();
 
 })();
-
-</script>
-</html>

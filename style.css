@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #313131;
+	background: #FEFEFE;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+
+#container {
+	width: 700px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+ #list .checked {
+ 	color: #999;
+}
+
+#list .done {
+ 	text-decoration: line-through;
+}
