@@ -11,13 +11,44 @@ body {
 }
 
 #container {
-	width: 700px;
+	max-width: 700px;
 	margin: 0 auto;
 	padding: 10px;
+	background: #FFF;
 }
 
 ul {
 	list-style: none;
+}
+
+ul li {
+	width: 90%;
+	padding: 1em 5%;
+	margin-bottom: 2px;
+	background: #f6f6f6;
+}
+
+form {
+	overflow: hidden;
+	width: 100%;
+}
+
+form input {
+	width: 88%;
+	padding: 20px 1%;
+	margin: 0;
+	float: left;
+	border: 1px solid #f2f2f2;
+}
+
+#add-it {
+	width: 8%;
+	background: ##27ae60;
+	color: #FFF;
+	padding: 10px 1%;
+	font-weight: bold;
+	font-size: 1.8em;
+	float: right;
 }
 
  #list .checked {
