@@ -31,7 +31,14 @@
 	};
 
 	function getList() {
-		list.innerHTML = window.localStorage.myItems;
+		var listItems = window.localStorage.myItems;	
+		
+		if (typeof(listItems) != 'undefined') {
+			list.innerHTML = listItems;
+		} else {
+			list.innerHTML = '<p class="nothing">Add an item below!</p>'
+		}
+
 	};
 
 	getList();
