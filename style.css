@@ -58,3 +58,9 @@ form input {
 #list .done {
  	text-decoration: line-through;
 }
+
+.nothing {
+	width: 88%;
+	padding: 20px 1%;
+	text-align: center;
+}
