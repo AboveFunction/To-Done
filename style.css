@@ -5,16 +5,17 @@
 
 body {
 	color: #313131;
-	background: #FEFEFE;
-	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	background: #a69a88 url('images/background.jpg') 50% 50% fixed no-repeat;
+    -moz-background-size: cover; 
+    background-size: cover; 
+	font: 16px/1.2 "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
 }
 
 #container {
-	max-width: 700px;
+	font-size: 1.4em;
 	margin: 0 auto;
-	padding: 10px;
-	background: #FFF;
+	padding: 10px 0;
 }
 
 ul {
@@ -22,15 +23,19 @@ ul {
 }
 
 ul li {
+	color: #FEFEFE;
 	width: 90%;
 	padding: 1em 5%;
 	margin-bottom: 2px;
-	background: #f6f6f6;
+	background: #595a5f;
+	opacity: 0.9;
 }
 
 form {
 	overflow: hidden;
 	width: 100%;
+	position: fixed;
+	bottom: 0;
 }
 
 form input {
@@ -38,16 +43,19 @@ form input {
 	padding: 20px 1%;
 	margin: 0;
 	float: left;
-	border: 1px solid #f2f2f2;
+	border: 0;
+	font-size: 1.4em;
+	-webkit-appearance: none;
+    border-radius: 0;
 }
 
 #add-it {
-	width: 8%;
-	background: ##27ae60;
+	width: 10%;
+	background: #004da9;
 	color: #FFF;
-	padding: 10px 1%;
+	padding: 20px 0;
 	font-weight: bold;
-	font-size: 1.8em;
+	font-size: 1.4em;
 	float: right;
 }
 

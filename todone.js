@@ -1,4 +1,11 @@
+function ghostAdd() {
+	document.getElementById("item").focus();
+}
+
+ghostAdd();
+
 (function() {
+
 	var item = document.querySelector('#item'),
 		form = document.querySelector('form'),
 		list = document.querySelector('#list');
@@ -7,6 +14,9 @@
 		list.innerHTML += '<li>' + item.value + '</li>';
 		saveItem()
 		ev.preventDefault();
+
+		document.getElementById('item').value="";
+
 	}, false);
 
 	list.addEventListener('click', function(ev) {
