@@ -5,9 +5,7 @@
 
 body {
 	color: #313131;
-	background: #a69a88 url('images/background.jpg') 50% 50% fixed no-repeat;
-    -moz-background-size: cover; 
-    background-size: cover; 
+	background: #f7f9f9; 
 	font: 16px/1.2 "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
 }
