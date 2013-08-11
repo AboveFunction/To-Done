@@ -98,7 +98,15 @@ form input {
 	float: right;
 }
 
- #list .checked {
+.add-list-items {
+	display: none;
+}
+
+#list {
+	display: none;
+}
+
+#list .checked {
  	color: #999;
 }
 

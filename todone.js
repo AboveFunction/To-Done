@@ -1,3 +1,4 @@
+var overview = $(".container").hammer();
 var tram = $(".tram").hammer();
 var toDo = $(".to-do").hammer();
 var toDone = $(".to-done").hammer();
@@ -9,23 +10,21 @@ tram.on("swipeleft", function(ev) {
 	$(".hide").animate({"right": "+=90px"}, "slow");
 });
 
-toDo.on("swipeleft", function(ev) {
-	$(this).hide();
+toDo.on("swiperight", function(ev) {
+	$("#list").slideDown();
 });
 
-toDone.on("swipeleft", function(ev) {
-	$(this).hide();
+toDo.on("swipeleft", function(ev) {
+	$(".add-list-items").show();
+	$("#item").focus();
 });
 
 hideIt.on("tap", function(ev) {
 	$(this).parent().slideUp("slow");
 });
 
-function ghostAdd() {
-	document.getElementById("item").focus();
-}
 
-ghostAdd();
+// Vanilla JS I can't write in jQuery yet :)
 
 (function() {
 
