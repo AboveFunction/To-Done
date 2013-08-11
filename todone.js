@@ -1,3 +1,26 @@
+var tram = $(".tram").hammer();
+var toDo = $(".to-do").hammer();
+var toDone = $(".to-done").hammer();
+var hideIt = $(".hide").hammer();
+
+tram.on("swipeleft", function(ev) {
+	$(".tram p").animate({"padding-left": "-=70px"}, "slow");
+	$(".tram").animate({"background-position": "-=70px"}, "slow");
+	$(".hide").animate({"right": "+=90px"}, "slow");
+});
+
+toDo.on("swipeleft", function(ev) {
+	$(this).hide();
+});
+
+toDone.on("swipeleft", function(ev) {
+	$(this).hide();
+});
+
+hideIt.on("tap", function(ev) {
+	$(this).parent().slideUp("slow");
+});
+
 function ghostAdd() {
 	document.getElementById("item").focus();
 }
