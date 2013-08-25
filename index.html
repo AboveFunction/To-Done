@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>To-Do List</title>
+	<title>TO-DO</title>
 
 	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Grand+Hotel|Roboto:500' rel='stylesheet' type='text/css'>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
@@ -14,38 +14,23 @@
 
 <div class="container">
 
-	<div class="overview">
-		<h1>Morning, Grant!</h1>
+	<h1>TO-DO</h1>
 
-		<div class="module tram">
-			<p>
-				The next tram is in 7 minutes
-			</p>
-			<span class="hide">
-				Hide
-			</span>
-		</div>
+	<ul class="module to-do" id="list">
+		<li><div><a href="#">edit</a> <a href="#">delete</a></div> Item goes here</li>
+		<li><div><a href="#">edit</a> <a href="#">delete</a></div> Item goes here</li>
+		<li><div><a href="#">edit</a> <a href="#">delete</a></div> Item goes here</li>
+	</ul>
 
-		<div class="module to-do">
-			<p>
-				17 items to get done.
-			</p>
-		</div>
-		<ul id="list"></ul>
+	<ul class="module to-done" id="completed">
+		<li><div><a href="#">remove</a></div> Item goes here</li>
+		<li><div><a href="#">remove</a></div> Item goes here</li>
+		<li><div><a href="#">remove</a></div> Item goes here</li>
+	</ul>
 
-		<div class="module to-done">
-			<p>
-				4 items completed yesterday.
-			</p>
-		</div>
-	</div>
-
-	<div class="add-list-items">
-		<form>
-			<input type="text" name="item" id="item" placeholder="Add an item here..." required/>
-			<input type="submit" value="&#43;" id="add-it" />
-		</form>
-	</div>
+	<button type="submit" id="add-it" class="add" onclick="prompt('What do you need to get done?');">
+		Add Something
+	</button>
 
 </div>
 
