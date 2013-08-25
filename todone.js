@@ -1,15 +1,14 @@
-var options = $(".module li div").hammer();
-var item = $(".module li").hammer();
+var item = $("#list").hammer();
 
 // Get the list from local storage
 $("#list").append(window.localStorage.toDone);
 
 // List options
-item.on("tap", function(ev) {
+item.on("tap", "li", function(ev) {
 	$(this).children("div").animateAuto("width", 500);
 });
 
-item.on("swipeleft", function(ev) {
+item.on("swipeleft", "li", function(ev) {
 	$(this).children("div").animate({"width": "30px"}, 500);
 });
 
