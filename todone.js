@@ -4,7 +4,7 @@ var item = $("#list").hammer();
 $("#list").append(window.localStorage.toDone);
 
 // List options
-item.on("tap", "li", function(ev) {
+item.on("swiperight", "li", function(ev) {
 	$(this).children("div").animateAuto("width", 500);
 });
 
